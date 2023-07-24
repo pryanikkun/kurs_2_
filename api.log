@@ -1,0 +1,35 @@
+2023-07-24 22:04:37,408 INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-07-24 22:04:37,408 INFO [33mPress CTRL+C to quit[0m
+2023-07-24 22:04:37,418 INFO  * Restarting with stat
+2023-07-24 22:04:38,159 WARNING  * Debugger is active!
+2023-07-24 22:04:38,164 INFO  * Debugger PIN: 137-212-999
+2023-07-24 22:09:21,204 INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-07-24 22:09:21,204 INFO [33mPress CTRL+C to quit[0m
+2023-07-24 22:09:21,204 INFO  * Restarting with stat
+2023-07-24 22:09:22,477 WARNING  * Debugger is active!
+2023-07-24 22:09:22,490 INFO  * Debugger PIN: 137-212-999
+2023-07-24 22:09:27,167 INFO 127.0.0.1 - - [24/Jul/2023 22:09:27] "GET / HTTP/1.1" 200 -
+2023-07-24 22:09:27,769 INFO 127.0.0.1 - - [24/Jul/2023 22:09:27] "[36mGET /static/css/styles.min.css HTTP/1.1[0m" 304 -
+2023-07-24 22:09:27,779 INFO 127.0.0.1 - - [24/Jul/2023 22:09:27] "[36mGET /static/img/bookmark.png HTTP/1.1[0m" 304 -
+2023-07-24 22:09:27,787 INFO 127.0.0.1 - - [24/Jul/2023 22:09:27] "[36mGET /static/img/eye.png HTTP/1.1[0m" 304 -
+2023-07-24 22:09:34,777 INFO 127.0.0.1 - - [24/Jul/2023 22:09:34] "GET /users/leo HTTP/1.1" 200 -
+2023-07-24 22:09:34,859 INFO 127.0.0.1 - - [24/Jul/2023 22:09:34] "[36mGET /static/css/styles.min.css HTTP/1.1[0m" 304 -
+2023-07-24 22:09:34,859 INFO 127.0.0.1 - - [24/Jul/2023 22:09:34] "[36mGET /static/img/eye.png HTTP/1.1[0m" 304 -
+2023-07-24 22:09:34,867 INFO 127.0.0.1 - - [24/Jul/2023 22:09:34] "[36mGET /static/img/bookmark.png HTTP/1.1[0m" 304 -
+2023-07-24 22:09:44,852 INFO 127.0.0.1 - - [24/Jul/2023 22:09:44] "GET / HTTP/1.1" 200 -
+2023-07-24 22:09:44,939 INFO 127.0.0.1 - - [24/Jul/2023 22:09:44] "[36mGET /static/css/styles.min.css HTTP/1.1[0m" 304 -
+2023-07-24 22:09:44,939 INFO 127.0.0.1 - - [24/Jul/2023 22:09:44] "[36mGET /static/img/bookmark.png HTTP/1.1[0m" 304 -
+2023-07-24 22:09:44,939 INFO 127.0.0.1 - - [24/Jul/2023 22:09:44] "[36mGET /static/img/eye.png HTTP/1.1[0m" 304 -
+2023-07-24 22:09:47,341 INFO 127.0.0.1 - - [24/Jul/2023 22:09:47] "GET / HTTP/1.1" 200 -
+2023-07-24 22:09:47,408 INFO 127.0.0.1 - - [24/Jul/2023 22:09:47] "[36mGET /static/css/styles.min.css HTTP/1.1[0m" 304 -
+2023-07-24 22:09:47,410 INFO 127.0.0.1 - - [24/Jul/2023 22:09:47] "[36mGET /static/img/bookmark.png HTTP/1.1[0m" 304 -
+2023-07-24 22:09:47,423 INFO 127.0.0.1 - - [24/Jul/2023 22:09:47] "[36mGET /static/img/eye.png HTTP/1.1[0m" 304 -
+2023-07-24 22:09:56,648 INFO 127.0.0.1 - - [24/Jul/2023 22:09:56] "[36mGET /static/css/styles.min.css HTTP/1.1[0m" 304 -
+2023-07-24 22:09:56,757 INFO 127.0.0.1 - - [24/Jul/2023 22:09:56] "[36mGET /static/css/styles.min.css.map HTTP/1.1[0m" 304 -
+2023-07-24 22:10:57,038 INFO 127.0.0.1 - - [24/Jul/2023 22:10:57] "GET / HTTP/1.1" 200 -
+2023-07-24 22:10:57,070 INFO 127.0.0.1 - - [24/Jul/2023 22:10:57] "[36mGET /static/css/styles.min.css HTTP/1.1[0m" 304 -
+2023-07-24 22:10:57,073 INFO 127.0.0.1 - - [24/Jul/2023 22:10:57] "[36mGET /static/img/bookmark.png HTTP/1.1[0m" 304 -
+2023-07-24 22:10:57,094 INFO 127.0.0.1 - - [24/Jul/2023 22:10:57] "[36mGET /static/img/eye.png HTTP/1.1[0m" 304 -
+2023-07-24 22:10:57,160 INFO 127.0.0.1 - - [24/Jul/2023 22:10:57] "[36mGET /static/css/styles.min.css.map HTTP/1.1[0m" 304 -
