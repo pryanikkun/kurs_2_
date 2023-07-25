@@ -38,12 +38,12 @@
             <img src="../static/img/bookmark.png" alt="Закладка" class="item__bookmark-icon" width="24">
           </button>
         </div>
-        <a href="" class="item__post-link">
+        <a href="/posts/{{ post['pk'] }}" class="item__post-link">
           <img src="{{ post['pic'] }}" alt="Картинка поста" width="348" class="item__post-img">
         </a>
         <div class="item__descr">
           <p class="item__text">
-          {{ post['content'] }}
+          {{ post['content']|safe }}
           </p>
         </div>
         <div class="item__bottom">
