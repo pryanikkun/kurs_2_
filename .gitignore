@@ -1,2 +1,8 @@
 /venv/
 .pytest_cache
+/app/api/.pytest_cache/
+/app/bookmarks/.pytest_cache/
+/app/posts/.pytest_cache/
+/app/bookmarks/dao/.pytest_cache/
+/app/posts/dao/.pytest_cache/
+/tests/.pytest_cache/
