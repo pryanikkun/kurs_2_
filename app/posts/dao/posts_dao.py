@@ -10,10 +10,23 @@ class PostsDAO:
     def load_posts(self):
         with open(self.path_posts, 'r', encoding='utf-8') as file:
             data = json.load(file)
+
+        for post in data:
+            words = post['content'].split(' ')
+            tags = []
+            for word in words:
+                if '#' in word:
+                    tags.append(word)
+            content = ' '.join(words)
+            if tags != []:
+                for tag in tags:
+                    content = content.replace(tag, f'<a href="/tag/{tag[1:]}" class="item__tag">{tag}</a> ', 1)
+            post['content'] = content
+
         return data
 
     def load_comments(self):
-        with open(self.path_comments, 'r',encoding='utf-8') as file:
+        with open(self.path_comments, 'r', encoding='utf-8') as file:
             data = json.load(file)
         return data
 
@@ -41,7 +54,6 @@ class PostsDAO:
         for post in posts:
             if query.lower() in post['content'].lower():
                 query_posts.append(post)
-
         return query_posts
 
     def get_post_by_pk(self, pk):
@@ -55,8 +67,6 @@ class PostsDAO:
         posts = self.load_posts()
         post_id_comments = []
 
-        # all_post_id = {x['pk'] for x in posts}
-
         if post_id > len(posts):
             raise ValueError('Поста с таким id не существует')
 
@@ -65,5 +75,3 @@ class PostsDAO:
                 post_id_comments.append(comment)
 
         return post_id_comments
-
-
