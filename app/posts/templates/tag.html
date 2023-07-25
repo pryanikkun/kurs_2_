@@ -16,8 +16,8 @@
           <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#back"></use>
         </svg>
       </a>
-      <a href="/tag/{{ tag }}" class="header__nosvg">
-        ТЭГ / {{ tag }}
+      <a href="/tag/{{ tagname }}" class="header__nosvg">
+        {{ tag }}
       </a>
     </div>
   </header>
@@ -31,7 +31,7 @@
             <div class="item__ava-wrap">
               <img src="{{ post['poster_avatar'] }}" alt="Аватарка" class="item__ava" width="47">
             </div>
-            <span class="item__username">Username</span>
+            <span class="item__username">{{ post['poster_name'] }}</span>
           </a>
         </div>
         <a href="/posts/{{ post['pk'] }}" class="item__post-link">
@@ -46,9 +46,9 @@
         </div>
         <div class="item__post-bottom">
           <a href="/posts/{{ post['pk'] }}" class="item__btn-more">Подробнее</a>
-          <button type="button" class="item__bookmark-btn">
-            <img src="/static/img/bookmark.png" alt="закладка" class="item__bookmark-icon" width="24">
-          </button>
+          <a href="/bookmarks/add/{{ post['pk'] }}" class="item__bookmark-btn">
+            <img src="/static/img/bookmark.png" alt="Закладка" class="item__bookmark-icon" width="24">
+          </a>
         </div>
       </div>
       {% endfor %}
