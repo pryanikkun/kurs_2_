@@ -20,11 +20,19 @@ def page_comments(post_id):
 @posts_blueprint.route('/search/')
 def page_search():
     s = request.values.get('s')
-    post = posts.search_for_posts(s)
-    return render_template('search.html', len_posts=len(post), posts=post)
+    found_posts = posts.search_for_posts(s)
+    return render_template('search.html', len_posts=len(found_posts), posts=found_posts)
 
 
 @posts_blueprint.route('/users/<username>')
 def page_users(username):
     post = posts.get_posts_by_user(username)
     return render_template('user-feed.html', username=username, posts=post)
+
+
+@posts_blueprint.route('/tag/<tagname>')
+def page_tags(tagname):
+    tag = '#' + tagname
+    tag_posts = posts.search_for_posts(tag)
+    return render_template('tag.html', tag=tag, posts=tag_posts)
+
