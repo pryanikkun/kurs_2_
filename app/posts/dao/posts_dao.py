@@ -8,6 +8,7 @@ class PostsDAO:
         self.path_comments = path_comments
 
     def load_posts(self):
+        """ Загрузка постов из posts.json и замена тэгов """
         with open(self.path_posts, 'r', encoding='utf-8') as file:
             data = json.load(file)
 
@@ -26,15 +27,18 @@ class PostsDAO:
         return data
 
     def load_comments(self):
+        """ Загрузка комментариев из comments.json """
         with open(self.path_comments, 'r', encoding='utf-8') as file:
             data = json.load(file)
         return data
 
     def get_all_posts(self):
+        """ Получение всех постов """
         posts = self.load_posts()
         return posts
 
     def get_posts_by_user(self, user_name):
+        """ Получение постов по имени пользователя """
         posts = self.load_posts()
         users = set([x['poster_name'] for x in posts])
         user_posts = []
@@ -49,6 +53,7 @@ class PostsDAO:
         return user_posts
 
     def search_for_posts(self, query):
+        """ Поиск постов по запросу """
         posts = self.load_posts()
         query_posts = []
         for post in posts:
@@ -57,12 +62,14 @@ class PostsDAO:
         return query_posts
 
     def get_post_by_pk(self, pk):
+        """ Получение постов по номеру """
         posts = self.load_posts()
         for post in posts:
             if pk == post['pk']:
                 return post
 
     def get_comments_by_post_id(self, post_id):
+        """ Получение комментов по id """
         comments = self.load_comments()
         posts = self.load_posts()
         post_id_comments = []
